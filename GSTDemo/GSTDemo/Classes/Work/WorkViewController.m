@@ -7,16 +7,31 @@
 //
 
 #import "WorkViewController.h"
+#import "WorkCollectionCell.h"
 
-@interface WorkViewController ()
-
+@interface WorkViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@property(nonatomic,strong)UICollectionView * collectionView;
+@property(nonatomic,strong)UICollectionViewFlowLayout * flowLayout;
 @end
 
 @implementation WorkViewController
 
+
+#pragma mark - =======  initSubViews  =======
+-(void)initSubViews{
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([WorkCollectionCell class]) bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:NSStringFromClass([WorkCollectionCell class])];
+    
+//    [self addSubview:self.collectionView];
+//    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.top.equalTo(self);
+//        make.height.mas_equalTo(kCollectionViewCellHeight);
+//    }];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self initSubViews];
 }
 
 /*

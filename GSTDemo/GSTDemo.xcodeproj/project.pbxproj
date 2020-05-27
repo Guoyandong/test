@@ -28,6 +28,8 @@
 		D7CB792D247E9F8800EEFE6C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CB792B247E9F8800EEFE6C /* HomeViewController.m */; };
 		D7CB7933247E9FA900EEFE6C /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CB7931247E9FA900EEFE6C /* WorkViewController.m */; };
 		D7CB7939247E9FBD00EEFE6C /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CB7937247E9FBD00EEFE6C /* MyViewController.m */; };
+		D7CB7946247EA77800EEFE6C /* WorkCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CB7944247EA77800EEFE6C /* WorkCollectionCell.m */; };
+		D7CB7947247EA77800EEFE6C /* WorkCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7CB7945247EA77800EEFE6C /* WorkCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,9 @@
 		D7CB7931247E9FA900EEFE6C /* WorkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkViewController.m; sourceTree = "<group>"; };
 		D7CB7936247E9FBD00EEFE6C /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		D7CB7937247E9FBD00EEFE6C /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		D7CB7943247EA77800EEFE6C /* WorkCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkCollectionCell.h; sourceTree = "<group>"; };
+		D7CB7944247EA77800EEFE6C /* WorkCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkCollectionCell.m; sourceTree = "<group>"; };
+		D7CB7945247EA77800EEFE6C /* WorkCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +269,9 @@
 			children = (
 				D7CB7930247E9FA900EEFE6C /* WorkViewController.h */,
 				D7CB7931247E9FA900EEFE6C /* WorkViewController.m */,
+				D7CB7943247EA77800EEFE6C /* WorkCollectionCell.h */,
+				D7CB7944247EA77800EEFE6C /* WorkCollectionCell.m */,
+				D7CB7945247EA77800EEFE6C /* WorkCollectionCell.xib */,
 			);
 			path = Work;
 			sourceTree = "<group>";
@@ -382,6 +390,7 @@
 			files = (
 				D7CB78BB247E921600EEFE6C /* LaunchScreen.storyboard in Resources */,
 				D7CB78B8247E921600EEFE6C /* Assets.xcassets in Resources */,
+				D7CB7947247EA77800EEFE6C /* WorkCollectionCell.xib in Resources */,
 				D7CB7927247E9D5B00EEFE6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CB7946247EA77800EEFE6C /* WorkCollectionCell.m in Sources */,
 				D7CB7906247E92C000EEFE6C /* BaseTableView.m in Sources */,
 				D7CB7902247E92C000EEFE6C /* BaseTableViewCell.m in Sources */,
 				D7CB7939247E9FBD00EEFE6C /* MyViewController.m in Sources */,
